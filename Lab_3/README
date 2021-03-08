@@ -1,0 +1,3 @@
+Lab 3: Bees (Domain Driven Design)
+
+For these labs you will work in groups to develop a flower bed simulator. In this simulator, bees visit flowers for food, bees attack and slow down other bees, and flowers can drain energy. This might be used by a botanist to experiment with different mixes of bees and flowers.
