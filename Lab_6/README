@@ -1,0 +1,7 @@
+Lab 6 - MKE Tour (Observer Pattern)
+
+A common travel game is to find the letters in a word on the license plates of vehicles that you see on the road. For example, the license plates TTA-351 and CPO-OO3 would be sufficient to match "CAT". For this lab, you will be given code that draws cars, buses, and a person moving around a map. As the person comes into contact with a car, that car's plate will be used to match letters in various keywords. The first keyword you will match is "MSOE". Your implementation will use the Observer pattern.
+
+The starting point for this lab is a Github Classroom assignment (Links to an external site.). Follow the invitation link, being sure to sign up with or link your MSOE email to your github account.
+
+A key class being given to you is CityMap. It displays a portion of Milwaukee. This map is just for reference - your game pieces will not actually follow the roads and will even float across the harbor. This map also includes a Museum - a rectangular area you can walk through. The moving objects are subclasses of the abstract class MobileEntity. We use the term "tagging" to mean colliding with another object. The base class Taggable are those objects that can collide with other objects.
