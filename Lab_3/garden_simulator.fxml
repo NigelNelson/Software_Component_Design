@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" onKeyPressed="#onKeyPressed" vgap="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garden_simulator.GardenController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane id="theGarden" fx:id="theGarden" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="50.0" layoutY="550.0" scaleZ="2.0" text="Press arrow keys to move bee" textFill="#16048b" translateZ="1.0">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <VBox prefHeight="300.0" prefWidth="100.0" GridPane.rowIndex="3">
+         <children>
+            <HBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="300.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fx:id="linearBeeKey" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="linearBeeLabel" text="Label" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="300.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fx:id="randomBeeKey" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="randomBeeLabel" text="Label" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="300.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fx:id="flowerKey" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="flowerLabel" text="Label" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="300.0" prefWidth="150.0">
+                     <children>
+                        <ImageView fx:id="drainingKey" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="drainingLabel" text="Label" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
